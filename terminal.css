@@ -1,6 +1,6 @@
 @font-face {
     font-family: terminal;
-    src: url(../../assets/fonts/codenewroman.woff);
+    src: url(assets/fonts/codenewroman.woff);
 }
 .title, #prompt{
     font-family: terminal !important;
