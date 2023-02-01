@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="terminal.css"/>
+    <title>Asaki Hub</title>
+</head>
+<body>
+    <h1 class="title">Asaki Terminal</h1>
+    <div id="pc" hidden>
+        <h2 class="title">Terminal - PC</h2>
+        <textarea title="prompt" id="prompt" spellcheck="false"></textarea>
+    </div>
+    <div id="mobile" hidden>
+        <h2 class="title">Terminal - Mobile</h2>
+        <input type="text" id="mbprompt">
+        <button id="btnprompt">Enviar</button>
+        <br>
+        <span>*Digite o comando e aperte "Enviar"</span>
+    </div>
+    <script type="module" src="interpreter.js"></script>
+    <script type="module" src="terminal.js"></script>
+</body>
+</html>

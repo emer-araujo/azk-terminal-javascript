@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waifu Image</title>
+    <link rel="stylesheet" href="terminal.css"/>
+</head>
+<body>
+    <center>
+        <h1 class="title">Generated Image</h1>
+        <img title="replace" id="replace" width="600" height="600"/>
+    </center>
+    <script>
+        let params = new URLSearchParams(document.location.search);
+        let image = params.get("image"); 
+        let replace = document.getElementById("replace");
+        replace.setAttribute("src", image);
+    </script>
+</body>
+</html>
